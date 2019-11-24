@@ -62,3 +62,4 @@ buck-out/
 
 #config file
 config.ts
+android/app/google-services.json
