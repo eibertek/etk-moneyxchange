@@ -1,0 +1,40 @@
+{
+    "project_info": {
+      "project_number": "309713847044",
+      "firebase_url": "https://etk-money-xchange.firebaseio.com",
+      "project_id": "etk-money-xchange",
+      "storage_bucket": "etk-money-xchange.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:309713847044:android:a902912f19988791280651",
+          "android_client_info": {
+            "package_name": "com.eibertek.etkmoneyxchange"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "309713847044-4fobpblj90565s9d5murrc0qv77mplcb.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyD4b60_NNqsbpY57h2EAtwDmKUipJQT7IY"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "309713847044-4fobpblj90565s9d5murrc0qv77mplcb.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
