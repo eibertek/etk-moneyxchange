@@ -41,6 +41,7 @@ buck-out/
 *.keystore
 !debug.keystore
 *.google-services.json
+./android/app/google-services.json
 
 # fastlane
 #
@@ -61,4 +62,3 @@ buck-out/
 
 #config file
 config.ts
- 
