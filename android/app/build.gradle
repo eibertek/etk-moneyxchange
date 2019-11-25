@@ -133,6 +133,7 @@ android {
 
     defaultConfig {
         applicationId "com.eibertek.etkmoneyxchange"
+        multiDexEnabled true
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -190,13 +191,10 @@ dependencies {
     implementation "com.google.android.gms:play-services-base:16.1.0"
     implementation "com.google.firebase:firebase-core:16.0.9"
     implementation "com.google.firebase:firebase-auth:17.0.0"
+    implementation 'com.google.firebase:firebase-firestore:18.1.0'
 
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
-
-//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2') {
-//        exclude group: 'com.google.code.findbugs'
-//    }
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
