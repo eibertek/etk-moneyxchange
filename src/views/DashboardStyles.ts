@@ -27,4 +27,18 @@ export default StyleSheet.create({
         alignSelf:'center',
 //        alignItems: 'center',
     },   
+    credentialsContainer:{
+        flex:1,
+        flexDirection: "row",
+    },
+    credentialsPhoto:{
+        width:50,
+        height:50,
+    },
+    credentialsText:{
+
+    },
+    credentialsLogOutButton:{
+        width:70,
+    },
 });
