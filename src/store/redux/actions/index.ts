@@ -15,7 +15,11 @@ export const CONFIG_SAVE = actionCreator('configurator::save');
 export const SERVICE_LOAD = actionCreator('service::load');
 export const SERVICE_SAVE = actionCreator('service::save');
 
+export const CREDENTIALS = actionCreator('credentials');
+
 export const NAVIGATION_GO_TO = 'Navigation:: go to';
+
+export const LOG_MESSAGE = 'Messages Login::';
 
 export const navigate = (params: any) => {
     return {

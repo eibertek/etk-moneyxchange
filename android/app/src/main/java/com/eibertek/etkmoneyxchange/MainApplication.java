@@ -11,6 +11,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import io.invertase.firebase.auth.RNFirebaseAuthPackage; 
 import io.invertase.firebase.firestore.RNFirebaseFirestorePackage; // <-- Add this line
+import io.invertase.firebase.fabric.crashlytics.RNFirebaseCrashlyticsPackage; // <-- Add this line
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -27,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           packages.add(new RNFirebaseAuthPackage()); // <-- Add this line
           packages.add(new RNFirebaseFirestorePackage()); // <-- Add this line
+          packages.add(new RNFirebaseCrashlyticsPackage()); // <-- Add this line
 
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());

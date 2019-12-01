@@ -26,6 +26,8 @@ export default class Login {
             const data = await GoogleSignin.signIn();
             const credential = await firebase.auth.GoogleAuthProvider.credential(data.idToken);
             await AsyncStorage.setItem('credentials', JSON.stringify(credential));
+            await AsyncStorage.setItem('google_credentials', JSON.stringify(data));
+       //     console.log('aaaa', data, credential);
             cb();
         }catch(e){
             console.log(e);
@@ -33,12 +35,9 @@ export default class Login {
     }
 
     public static googleSignOut = async () => {
-        try{
-            // await GoogleSignin.configure({
-            //     webClientId:'309713847044-4fobpblj90565s9d5murrc0qv77mplcb.apps.googleusercontent.com',
-            // });    
+        try{  
             await GoogleSignin.signOut();
-            AsyncStorage.clear();
+            await AsyncStorage.clear();
         }catch(e){
             console.log(e);
         }
